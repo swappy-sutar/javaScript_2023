@@ -136,18 +136,24 @@ printMessage();
 
 
 
-// async function getAllUsers(){
-//     try {
-//         const response = await fetch('https://api.github.com/users/hiteshchoudhary')
-//     const data = await response.json();
-//     console.log(data);
+async function getAllUsers(){
+    try {
+        const response = await fetch('https://api.github.com/users/hiteshchoudhary')
+    const data = await response.json();
+    console.log(data);
 
-//     } catch (error) {
-//         console.log("E : ",error);
-//     }
+    } catch (error) {
+        console.log("E : ",error);
+    }
 
-// }
-// getAllUsers()
+}
+
+
+getAllUsers();
+
+// ******************************************
+
+
 fetch('https://api.github.com/users/hiteshchoudhary')
 .then( (response) => {
     return response.json();
