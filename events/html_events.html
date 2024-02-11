@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html events</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>home</li>
+            <li>about</li>
+            <li>contact</li>
+        </ul>
+    </nav>
+    <img id="img" src="images/0 - create the collar.png" alt="">
+</body>
+<script> document.getElementById("img").onclick = function()
+    {
+        alert("my img");
+    }
+    document.getElementById("img").addEventListener("click", function(){
+        alert("my imageS")
+    },false 
+    )
+    </script>
+</html>

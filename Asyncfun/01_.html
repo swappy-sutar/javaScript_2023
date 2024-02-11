@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASYNC FUNCTION</title>
+</head>
+<body>
+    <h1> swapnil sutar</h1>
+    <button id="stop">STOP</button>
+</body>
+<script>
+
+// const sayHi = function(){ 
+// console.log('hey swappy');
+// }
+// setTimeout(sayHi,3000);
+
+
+const ChangeH1Tag = function() {
+    document.querySelector('h1').innerHTML='wel-come swappy';
+}
+
+const chnageMe = setTimeout(ChangeH1Tag,2000);
+
+document.querySelector('#stop').addEventListener('click',function(){
+    clearTimeout(chnageMe);
+    console.log("stop btn clicked");
+})
+
+
+</script>
+</html>
