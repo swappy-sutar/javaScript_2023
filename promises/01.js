@@ -164,3 +164,4 @@ fetch('https://api.github.com/users/hiteshchoudhary')
 }).catch(() => {
     throw "Something went wrong";
 })
+
