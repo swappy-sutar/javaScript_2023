@@ -9,7 +9,7 @@
 
 // 1. stack memory (primitive)
 
-let Myname = "swapnil"
+let Myname = "swapnnl"
 let anotherName= Myname
 
 anotherName="swappy"

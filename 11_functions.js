@@ -20,7 +20,7 @@ function add1(num1,num2){
     return  num1+num2;
 }
 let result = add1(5,4)
-console.log("addition:",result);
+console.log("addition is:",result);
 
 
 
@@ -57,7 +57,7 @@ handleObj({    //object tayar karun
 const newArr = [ 100,200,330,140,500]
 
 function returnArr(getArr){
-    return getArr[1];
+    return getArr[3];
 }
 console.log(returnArr(newArr)); 
 // or

@@ -51,12 +51,10 @@ function oneFun(num){
   return num+1;
 }
 
-
-console.log(twoFun(6));
 const twoFun = function(num){
   return num+2;
 }
-
+console.log(twoFun(6));
 
 // function aa(){
 

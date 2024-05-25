@@ -19,5 +19,5 @@ console.log(null == 0);  //false
 console.log(null >= 0);  // true--> null greatter than zero
  
 // Strict check ===
-console.log("2" == 2);
-console.log("2" === 2);
+console.log("2" == 2);//true
+console.log("2" === 2);//false

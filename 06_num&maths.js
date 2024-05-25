@@ -1,7 +1,7 @@
 const score = 100;
 console.log(score);
 
-const balnce = new Number(100)
+const balnce = new Number(200)
 console.log(balnce);
 
 console.log(balnce.toString().length);
@@ -11,7 +11,7 @@ console.log(balnce.toFixed(4));
 
 
 const othernum = 112.2145;
-console.log(othernum.toPrecision(4));
+console.log(othernum.toPrecision(5));
 
 // convert indian standerd
 const num = 10000000;

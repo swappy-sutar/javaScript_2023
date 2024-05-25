@@ -1,4 +1,4 @@
-const user ={
+const user = {
     username:"swap",
     age:22,
 
@@ -17,10 +17,7 @@ function demoThis(){
 demoThis()
 
 
-
-
 // Arrow Function  ----->   ()=>{}
-
 
 // basic arrow function
 const add = (num1, num2) => {  // jar he function la dil {}tr return keyeord lihan important ahe
@@ -31,10 +28,9 @@ console.log(add(5,6));
 
 // implicit arrow function
 
-const add0 = (num1, num2) => num1 + num2
-const add1 = (num1, num2) => (num1 + num2)  // jar he function la dil () tr return keyeord lihayvhi garj nahi lagt
-const add2 = (num1, num2) => ({username: "swapsutar"}) //----> object return in arrow fun.
-
+const add0 = (num1,num2) => num1 + num2
+const add1 = (num1,num2) => (num1 + num2)  // jar he function la dil () tr return keyeord lihayvhi garj nahi lagt
+const add2 = (num1,num2) => ({username: "swapsutar"}) //----> object return in arrow fun.
 
 console.log(add2());
 

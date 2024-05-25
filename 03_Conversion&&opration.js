@@ -1,12 +1,14 @@
 //Type conversion int to string.
 let someNumber = 33;
 let StringNumber = String(someNumber);
-console.log(StringNumber);
+console.log(StringNumber );
+console.log(someNumber +);
+
 console.log(typeof(StringNumber));
 
 
 //Type conversion string to int.
-let str = "33"
+let str = "34"
 let num = Number(str);
 console.log(num);
 console.log(typeof(num));
@@ -53,8 +55,6 @@ console.log(2/2);
 console.log(2%2);
 
 
-
-
 // string concatination
 let str1 = "swapnil";
 let str2 = " sutar";
@@ -66,7 +66,6 @@ console.log("2" + 2); // 22
 console.log(2 - "2"); // 0
 console.log("1" + 2 + 2); // 122
 console.log( 2 + 2 + "1"); // 41
-
 console.log( (3+4) * 2 % 3); //2
 
 // increment 
@@ -81,4 +80,3 @@ console.log(a);
 let b = 10;
 ++a;
 console.log(b);
-
