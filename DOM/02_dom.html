@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+  </head>
+  <body style="background: black; color: white">
+    <ul class="language"></ul>
+  </body>
+  <script>
+    function addLang(langName) {
+      const liList = document.createElement("li");
+      liList.innerHTML = `${langName}`;
+      document.querySelector(".language").appendChild(liList);
+    }
+
+    addLang("javaScript");
+    addLang("solidity");
+
+    function addOptimiseLang(langName) {
+      const liList = document.createElement("li");
+      liList.appendChild(document.createTextNode(langName));
+      document.querySelector(".language").appendChild(liList);
+    }
+
+    addOptimiseLang("java");
+    addOptimiseLang("c++");
+  </script>
+</html>

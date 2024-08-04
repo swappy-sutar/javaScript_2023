@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+    <style>
+      .main-body {
+        background: black;
+        color: white;
+      }
+    </style>
+  </head>
+  <body class="main-body">
+    <h1 id="h1" class="h1MSG">hey, good mornig</h1>
+    <p>Lorem, ipsum dolor.</p>
+    <ul>
+      <li class="liCLS">One</li>
+      <li class="liCLS">Two</li>
+      <li class="liCLS">Three</li>
+      <li class="liCLS">Four</li>
+    </ul>
+
+    <div class="parant">
+      <div class="days">sunday</div>
+      <div class="days">monday</div>
+      <div class="days">thusday</div>
+    </div>
+  </body>
+  <script>
+    const parant = document.querySelector(".parant");
+    // console.log(parant);
+    console.log(parant.children);
+    console.log(parant.children[1]);
+    console.log(parant.children[2].innerHTML);
+
+    // for (let i = 0; i < parant.children.length; i++) {
+    //   console.log(parant.children[i].innerHTML);
+    // }
+
+    parant.children[1].style.color = "orange";
+    console.log(parant.firstElementChild.innerHTML);
+    console.log(parant.lastElementChild);
+  </script>
+</html>
+<!-- Corruption -->
