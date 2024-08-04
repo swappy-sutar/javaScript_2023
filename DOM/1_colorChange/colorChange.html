@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color changer</title>
+  </head>
+  <style>
+    h1 {
+      text-align: center;
+    }
+    .main {
+      display: flex;
+      justify-content: center;
+    }
+    .btn {
+      margin: auto 10px;
+    }
+    #gray {
+      background: gray;
+      padding: 30px 50px;
+      border: 2px solid greenyellow;
+    }
+    #white {
+      background: white;
+      padding: 30px 50px;
+      border: 2px solid greenyellow;
+    }
+    #purple {
+      background: purple;
+      padding: 30px 50px;
+      border: 2px solid greenyellow;
+    }
+    #orange {
+      background: orange;
+      padding: 30px 50px;
+      border: 2px solid greenyellow;
+    }
+  </style>
+
+  <body style="background: black; color: white">
+    <div class="main">
+      <h1>Color changer</h1>
+      <span class="btn" id="gray"></span>
+      <span class="btn" id="white"></span>
+      <span class="btn" id="purple"></span>
+      <span class="btn" id="orange"></span>
+    </div>
+  </body>
+
+  <script>
+    const buttons = document.querySelectorAll(".btn");
+    buttons.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        document.body.style.backgroundColor = btn.id;
+      });
+    });
+  </script>
+</html>
