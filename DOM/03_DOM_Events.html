@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Hey Swappy</h1>
+    <button id="h1stop">H1 STOP</button>
+
+    <button id="start">START</button>
+    <button id="stop">STOP</button>
+  </body>
+  <script>
+    let intervalId;
+    let count = 1;
+    const startBtn = document.querySelector("#start");
+    const stopBtn = document.querySelector("#stop");
+
+    function name() {
+      console.log("swapnil", count++);
+    }
+
+    startBtn.addEventListener("click", function () {
+      intervalId = setInterval(name, 1000);
+      console.log("start Button clicked");
+    });
+
+    stopBtn.addEventListener("click", function () {
+      console.log("stop button clicked");
+      clearInterval(intervalId);
+    });
+  </script>
+</html>
