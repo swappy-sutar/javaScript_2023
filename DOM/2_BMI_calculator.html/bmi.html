@@ -26,7 +26,7 @@
     }
 
     h1 {
-      margin-bottom: 20px;
+      margin: 30px;
       font-size: 28px;
       color: #1db954;
     }
@@ -78,7 +78,6 @@
     #result {
       margin-top: 20px;
       font-size: 20px;
-      /* color: #1aa34a; */
     }
 
     span {
@@ -101,6 +100,7 @@
           <input type="text" id="weight" />
         </p>
         <button type="submit">Calculate</button>
+        <hr />
         <div id="result"></div>
       </form>
     </div>
@@ -124,11 +124,11 @@
         const bmi = (weight / ((height * height) / 10000)).toFixed(2);
 
         if (bmi <= 16.8) {
-          result.innerHTML = `BMI is : <span style = "color: orange;"> "${bmi}" Under weight</span>    `;
+          result.innerHTML = `BMI is : "${bmi}" <span style = "color: orange;"> Under weight</span>`;
         } else if (bmi >= 16.8 && bmi <= 24.9) {
-          result.innerHTML = `BMI is : <span style = "color: green;" > "${bmi}" Normal weight</span>    `;
+          result.innerHTML = `BMI is : "${bmi}" <span style = "color: green;" > Normal range</span>`;
         } else {
-          result.innerHTML = `BMI is : <span style = "color: red;"> "${bmi}" Over weight!!</span>    `;
+          result.innerHTML = `BMI is : "${bmi}" <span style = "color: red;"> Over weight!!</span>`;
         }
       }
     });
